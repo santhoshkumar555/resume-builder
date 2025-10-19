@@ -2,7 +2,8 @@
 
 [cite_start]This is a high-fidelity frontend prototype for an AI-powered resume builder, developed as a submission for a technical trial task. The application is built with **Next.js** and **Tailwind CSS** and focuses on creating a dynamic, real-time resume customization experience.
 
-**Live Demo Link:** `[PASTE YOUR LIVE VERCEL/NETLIFY LINK HERE]`
+**Live Demo Link:** `resume-builder-seven-beta.vercel.app
+`
 
 ---
 
