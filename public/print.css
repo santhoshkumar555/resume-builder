@@ -1,0 +1,33 @@
+/* public/print.css */
+
+/* This CSS will only apply when printing */
+@media print {
+  
+  /* Hide everything on the page by default */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Then, make the resume preview and its contents visible */
+  #resume-preview, #resume-preview * {
+    visibility: visible;
+  }
+
+  /* Position the resume at the top-left of the print page */
+  #resume-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Ensure the aspect ratio doesn't apply when printing */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}

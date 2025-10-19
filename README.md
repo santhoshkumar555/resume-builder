@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Resume Builder Prototype
 
-## Getting Started
+[cite_start]This is a high-fidelity frontend prototype for an AI-powered resume builder, developed as a submission for a technical trial task. The application is built with **Next.js** and **Tailwind CSS** and focuses on creating a dynamic, real-time resume customization experience.
 
-First, run the development server:
+**Live Demo Link:** `[PASTE YOUR LIVE VERCEL/NETLIFY LINK HERE]`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Task Fulfillment
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[cite_start]This project successfully fulfills the **Frontend Development (Option 1)** requirement by providing a modern UI for resume preview and customization[cite: 11]. [cite_start]It also incorporates elements from **UI/UX (Option 3)** and **AI/Automation (Option 4)** [cite: 13, 14] to demonstrate a complete and integration-ready module.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Core Features
 
-## Learn More
+* **Landing Page:** A clean, professional landing page with a clear call-to-action that routes to the editor.
+* **Real-Time Resume Editor:** A two-column layout (`/editor`) where all form inputs update the resume preview instantly using React state.
+* **Dynamic Data Management:** Users can add, edit, and remove items from list-based sections (Experience, Projects, Education, and Skills).
+* **Live Style Customization:**
+    * **Multi-Template System:** Switch between three distinct resume layouts (Professional, Classic, and Sidebar).
+    * **Accent Color Picker:** A global color picker that updates the theme (links, tags, borders, backgrounds) in real-time.
+* [cite_start]**Simulated AI Feature:** A frontend simulation of the "AI Enhance" feature for the professional summary, complete with a loading state[cite: 14]. This demonstrates the UI/UX and logic for an API-driven feature.
+* **Live Image Upload:** A local image uploader that generates an instant preview on the resume, with an option to remove the image.
+* **"Download as PDF" Function:** A "Download" button that triggers the browser's print dialog, using a custom print-only stylesheet (`print.css`) to generate a perfect, A4-sized PDF.
+* **Clean UI/UX:** All customization forms are nested in collapsible sections for a clean and manageable user interface.
 
-To learn more about Next.js, take a look at the following resources:
+## Technology Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** Next.js (App Router)
+* **Library:** React 18
+* **Styling:** Tailwind CSS
+* **State Management:** React Hooks (`useState`)
+* **Data:** Mock data (`lib/mock-data.js`) is used to simulate a decoupled backend, making the frontend ready for API integration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## How to Run Locally
 
-## Deploy on Vercel
+1.  **Clone the repository:**
+    ```bash
+    git clone [YOUR_GITHUB_REPO_URL]
+    cd resume-builder-trial-task
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the application:**
+    Open [http://localhost:3000](http://localhost:3000) to view the landing page.
+    Open [http://localhost:3000/editor](http://localhost:3000/editor) to view the resume builder.
